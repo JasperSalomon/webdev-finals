@@ -1,0 +1,18 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 20px; }
+.dashboard-container { max-width: 1100px; margin: 0 auto; background: #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+header { background: #3b82f6; padding: 20px; text-align: center; }
+header h2 { margin: 0; font-size: 24px; }
+header p { margin: 5px 0 0 0; color: #dbeafe; }
+.main-content { display: flex; min-height: 500px; }
+.activity-tabs { width: 25%; background: #111827; display: flex; flex-direction: column; padding: 10px 0; }
+.tab-btn { background: none; border: none; color: #94a3b8; padding: 15px 20px; text-align: left; font-size: 14px; cursor: pointer; transition: all 0.2s; border-left: 4px solid transparent; }
+.tab-btn:hover { background: #1f2937; color: #f8fafc; }
+.tab-btn.active { background: #1e293b; color: #3b82f6; border-left-color: #3b82f6; font-weight: bold; }
+.display-panel { width: 75%; padding: 30px; box-sizing: border-box; }
+.tab-content { display: none; }
+.tab-content.active-content { display: block; }
+h3 { margin-top: 0; color: #3b82f6; }
+input { background: #0f172a; border: 1px solid #475569; padding: 10px; color: white; border-radius: 6px; margin-right: 10px; margin-bottom: 10px; width: 120px; }
+button { background: #10b981; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+button:hover { background: #059669; }
+.output-box { margin-top: 20px; background: #0f172a; border-left: 4px solid #10b981; padding: 15px; border-radius: 4px; font-family: monospace; white-space: pre-line; color: #34d399; }
