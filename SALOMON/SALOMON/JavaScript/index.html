@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Activities 1-8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h2>JS Compilation Portfolio (Activities 1-8)</h2>
+            <p>Select an activity tab below to execute the program logic.</p>
+            <p>Prepared by: Jasper Gabrell R. Salomon</p>
+        </header>
+
+        <div class="main-content">
+            <nav class="activity-tabs">
+                <button class="tab-btn active" onclick="openActivity(event, 'act1')">Activity 1: Setup & Alert</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act2')">Activity 2: Get Element By Id</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act3')">Activity 3: External Script</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act4')">Activity 4: Variables (Hoisting)</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act5')">Activity 5: Variable Assignment</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act6')">Activity 6: Window Alert</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act7')">Activity 7: Document Write</button>
+                <button class="tab-btn" onclick="openActivity(event, 'act8')">Activity 8: Content Modification</button>
+            </nav>
+
+            <section class="display-panel">
+                
+                <div id="act1" class="tab-content active-content">
+                    <h3>Activity 1: Setup & Environment Alert</h3>
+                    <p>Triggers a browser system dialog notification trace.</p>
+                    <button onclick="runActivity1()">Run Activity 1</button>
+                    <div class="output-box" id="act1-out">Output will appear here...</div>
+                </div>
+
+                <div id="act2" class="tab-content">
+                    <h3>Activity 2: DOM Manipulation via ID</h3>
+                    <p id="act2-target">This original placeholder text string will undergo programmatic alteration.</p>
+                    <button onclick="runActivity2()">Modify Target Element Text</button>
+                </div>
+
+                <div id="act3" class="tab-content">
+                    <h3>Activity 3: External Script Execution Module</h3>
+                    <p>Demonstrates structural processing separation using a fully decoupled external layout loop handler.</p>
+                    <button onclick="runActivity3()">Invoke External Handlers</button>
+                    <div class="output-box" id="act3-out">Output will appear here...</div>
+                </div>
+
+                <div id="act4" class="tab-content">
+                    <h3>Activity 4: Variable Scope & Storage allocation</h3>
+                    <p>Computes literal declaration bounds.</p>
+                    <button onclick="runActivity4()">Evaluate Declarations</button>
+                    <div class="output-box" id="act4-out">Output will appear here...</div>
+                </div>
+
+                <div id="act5" class="tab-content">
+                    <h3>Activity 5: Variable Initialization Stack Tracing</h3>
+                    <p id="act5-demo">Awaiting variable binding assignment updates...</p>
+                    <button onclick="runActivity5()">Bind Value Sequence</button>
+                </div>
+
+                <div id="act6" class="tab-content">
+                    <h3>Activity 6: Window Alert Output Routines</h3>
+                    <p>Triggers an isolated standalone global presentation window framework block invocation sequence.</p>
+                    <button onclick="runActivity6()">Fire Alert Stream</button>
+                </div>
+
+                <div id="act7" class="tab-content">
+                    <h3>Activity 7: Inline Document Writing Pipeline</h3>
+                    <p>Demonstrates direct canvas rendering calculations via calculation outputs.</p>
+                    <button onclick="runActivity7()">Compute Document Arithmetic</button>
+                    <div class="output-box" id="act7-out">Output will appear here...</div>
+                </div>
+
+                <div id="act8" class="tab-content">
+                    <h3>Activity 8: innerText, innerHTML, textContent Node Property Auditing</h3>
+                    <p id="act8-example" style="background:#111827; padding:10px; border-radius:4px;"> 
+                        This element block contains excessive spacing buffers along with an isolated inner <span>nested span target</span> node reference.
+                    </p>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                        <button onclick="getInnerText()">Get innerText Output</button>
+                        <button onclick="getInnerHTML()">Get innerHTML Output</button>
+                        <button onclick="getTextContent()">Get textContent Output</button>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
